@@ -282,7 +282,7 @@ RiseVision.WorldClock.Settings.prototype.init = function() {
 		$("#placement").trigger("change");
 
 		//Translate
-		i18n.init(function(t) {
+		i18n.init({ fallbackLng: "en" }, function(t) {
 			$(".widget-wrapper").i18n().show();
 			$(".form-control").selectpicker();
 

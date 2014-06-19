@@ -55,7 +55,7 @@
         "top": "Topp",
         "bottom": "Bunn",
         "left": "Venstre",
-        "right": "Høyre"
+        "right": "HÃ¸yre"
     },
     "padding": {
         "label": "Mellomrom (pixels)",
@@ -65,7 +65,7 @@
         "label": "Oppstilling",
         "left": "Venstre",
         "center": "Senter",
-        "right": "Høyre"
+        "right": "HÃ¸yre"
     },
     "vertical-align": {
         "label": "Oppstilling",
@@ -76,7 +76,7 @@
     "title-font": {
         "font": "Font",
         "font-url": "Font URL",
-        "font-size": "Font Størrelse",
+        "font-size": "Font StÃ¸rrelse",
         "modal-title": "Fonter",
         "font-variants": "Font Variasjoner",
         "bold": "Bold",
@@ -95,12 +95,12 @@
     },
     "frame-width": "Ramme Vidde (pixels)",
     "face-color": {
-        "color": "Farge på Skive"
+        "color": "Farge pÃ¥ Skive"
     },
     "hand-color": {
-        "color": "Farge På Viserne"
+        "color": "Farge PÃ¥ Viserne"
     },
-    "hand-width": "Vidde På Viserne (pixels)",
+    "hand-width": "Vidde PÃ¥ Viserne (pixels)",
     "hour-tick-width": "Timeviser Vidde (pixels)",
     "minute-tick-width": "Minuttviser vidde (pixels)",
     "show-second-hand": "Vis Sekundviser",
@@ -111,7 +111,7 @@
     "numbers-font": {
         "font": "Tall Font",
         "font-url": "Tall Font URL",
-        "font-size": "Tall Font Størrelse",
+        "font-size": "Tall Font StÃ¸rrelse",
         "modal-title": "Fonter",
         "font-variants": "Font Varianter",
         "bold": "Bold",

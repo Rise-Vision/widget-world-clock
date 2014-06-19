@@ -7,10 +7,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: AlexK <alex.kolenoff@risedisplay.com>\n"
 "Language-Team: \n"
 "Language: es\n"
-"X-Generator: Poedit 1.6.1\n"
+"X-Generator: Poedit 1.6.5\n"
 
 msgid "settings"
 msgstr "Configuración del Reloj"
@@ -34,88 +34,88 @@ msgid "time-zone##label"
 msgstr "Huso Horario"
 
 msgid "time-zone##Pacific/Samoa"
-msgstr "(GMT -11:00) Midway Island, Samoa"
+msgstr "Midway Island, Samoa"
 
 msgid "time-zone##US/Hawaii"
-msgstr "(GMT -10:00) Hawaii"
+msgstr "Hawaii"
 
 msgid "time-zone##US/Alaska"
-msgstr "(GMT -9:00) Alaska"
+msgstr "Alaska"
 
 msgid "time-zone##Canada/Pacific"
-msgstr "(GMT -8:00) Tiempo Pacífico (EE.UU. y Canadá)"
+msgstr "Tiempo Pacífico (EE.UU. y Canadá)"
 
 msgid "time-zone##Canada/Mountain"
-msgstr "(GMT -8:00) Tiempo Montaña (EE.UU. y Canadá)"
+msgstr "Tiempo Montaña (EE.UU. y Canadá)"
 
 msgid "time-zone##Canada/Central"
-msgstr "(GMT -8:00) Tiempo Central (EE.UU. y Canadá)"
+msgstr "Tiempo Central (EE.UU. y Canadá)"
 
 msgid "time-zone##Canada/Eastern"
-msgstr "(GMT -8:00) Tiempo del Este(EE.UU. y Canadá)"
+msgstr "Tiempo del Este(EE.UU. y Canadá)"
 
 msgid "time-zone##Canada/Atlantic"
-msgstr "(GMT -8:00) Tiempo Atlántico(EE.UU. y Canadá)"
+msgstr "Tiempo Atlántico(EE.UU. y Canadá)"
 
 msgid "time-zone##Canada/Newfoundland"
-msgstr "(GMT -3:30) Hora de Terranova (Canada)"
+msgstr "Hora de Terranova (Canada)"
 
 msgid "time-zone##Europe/London"
-msgstr "(GMT) Dublín, Edimburgo, Lisboa, Londres"
+msgstr "Dublín, Edimburgo, Lisboa, Londres"
 
 msgid "time-zone##Europe/Amsterdam"
-msgstr "(GMT +1:00) Amsterdam, Berlín, Berna, Roma, París, Estocolmo, Viena"
+msgstr "Amsterdam, Berlín, Berna, Roma, París, Estocolmo, Viena"
 
 msgid "time-zone##Europe/Athens"
-msgstr "(GMT +2:00) Atenas, Bucarest, Estambul, Minsk"
+msgstr "Atenas, Bucarest, Estambul, Minsk"
 
 msgid "time-zone##Europe/Moscow"
-msgstr "(GMT +3:00) Moscú, San Petersburgo, Volgogrado"
+msgstr "Moscú, San Petersburgo, Volgogrado"
 
 msgid "time-zone##Asia/Tehran"
-msgstr "(GMT +3:30) Teherán"
+msgstr "Teherán"
 
 msgid "time-zone##Asia/Muscat"
-msgstr "(GMT +4:00) Abu Dhabi, Muscat"
+msgstr "Abu Dhabi, Muscat"
 
 msgid "time-zone##Asia/Kabul"
-msgstr "(GMT +4:30) Kabul"
+msgstr "Kabul"
 
 msgid "time-zone##Asia/Karachi"
-msgstr "(GMT +5:00) Islamabad, Karachi, Tashkent"
+msgstr "Islamabad, Karachi, Tashkent"
 
 msgid "time-zone##Asia/Calcutta"
-msgstr "(GMT +5:30) Kolkata, Chennai, Mumbai, Nueva Delhi"
+msgstr "Kolkata, Chennai, Mumbai, Nueva Delhi"
 
 msgid "time-zone##Asia/Kathmandu"
-msgstr "(GMT +5:45) Katmandú"
+msgstr "Katmandú"
 
 msgid "time-zone##Asia/Almaty"
-msgstr "(GMT +6:00) Astana, Almaty, Dhaka, Novosibirsk"
+msgstr "Astana, Almaty, Dhaka, Novosibirsk"
 
 msgid "time-zone##Asia/Rangoon"
-msgstr "(GMT +6:30) Rangún (Yangon, Birmania)"
+msgstr "Rangún (Yangon, Birmania)"
 
 msgid "time-zone##Asia/Bangkok"
-msgstr "(GMT +7:00) Bangkok, Hanoi, Jakarta"
+msgstr "Bangkok, Hanoi, Jakarta"
 
 msgid "time-zone##Asia/Tokyo"
-msgstr "(GMT +9:00) Osaka, Sapporo, Tokyo"
+msgstr "Osaka, Sapporo, Tokyo"
 
 msgid "time-zone##Australia/Adelaide"
-msgstr "(GMT +9:30) Adelaide, Darwin"
+msgstr "Adelaide, Darwin"
 
 msgid "time-zone##Australia/Canberra"
-msgstr "(GMT +10:00) Canberra, Melbourne, Sydney, Vladivostok"
+msgstr "Canberra, Melbourne, Sydney, Vladivostok"
 
 msgid "time-zone##Asia/Magadan"
-msgstr "(GMT +11:00) Magadan, Islas Salomón, Nueva Caledonia"
+msgstr "Magadan, Islas Salomón, Nueva Caledonia"
 
 msgid "time-zone##Pacific/Auckland"
-msgstr "(GMT +12:00) Auckland, Fiji, Kamchatka, Isla Marshall"
+msgstr "Auckland, Fiji, Kamchatka, Isla Marshall"
 
 msgid "time-zone##Pacific/Tongatapu"
-msgstr "(GMT +13:00) Nuku'alofa"
+msgstr "Nuku'alofa"
 
 msgid "show-title##label"
 msgstr "Mostrar Título"

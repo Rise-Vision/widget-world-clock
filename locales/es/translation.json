@@ -1,5 +1,5 @@
 {
-    "settings": "ConfiguraciÃ³n del Reloj",
+    "settings": "Configuración del Reloj",
     "save": "Guardar",
     "cancel": "Cancelar",
     "help": "Ayuda",
@@ -9,66 +9,66 @@
     },
     "time-zone": {
         "label": "Huso Horario",
-        "Pacific/Samoa": "Midway Island, Samoa",
-        "US/Hawaii": "Hawaii",
-        "US/Alaska": "Alaska",
-        "Canada/Pacific": "Tiempo PacÃ­fico (EE.UU. y CanadÃ¡)",
-        "Canada/Mountain": "Tiempo MontaÃ±a (EE.UU. y CanadÃ¡)",
-        "Canada/Central": "Tiempo Central (EE.UU. y CanadÃ¡)",
-        "Canada/Eastern": "Tiempo del Este(EE.UU. y CanadÃ¡)",
-        "Canada/Atlantic": "Tiempo AtlÃ¡ntico(EE.UU. y CanadÃ¡)",
-        "Canada/Newfoundland": "Hora de Terranova (Canada)",
-        "Europe/London": "DublÃ­n, Edimburgo, Lisboa, Londres",
-        "Europe/Amsterdam": "Amsterdam, BerlÃ­n, Berna, Roma, ParÃ­s, Estocolmo, Viena",
-        "Europe/Athens": "Atenas, Bucarest, Estambul, Minsk",
-        "Europe/Moscow": "MoscÃº, San Petersburgo, Volgogrado",
-        "Asia/Tehran": "TeherÃ¡n",
-        "Asia/Muscat": "Abu Dhabi, Muscat",
-        "Asia/Kabul": "Kabul",
-        "Asia/Karachi": "Islamabad, Karachi, Tashkent",
-        "Asia/Calcutta": "Kolkata, Chennai, Mumbai, Nueva Delhi",
-        "Asia/Kathmandu": "KatmandÃº",
-        "Asia/Almaty": "Astana, Almaty, Dhaka, Novosibirsk",
-        "Asia/Rangoon": "RangÃºn (Yangon, Birmania)",
-        "Asia/Bangkok": "Bangkok, Hanoi, Jakarta",
-        "Asia/Tokyo": "Osaka, Sapporo, Tokyo",
-        "Australia/Adelaide": "Adelaide, Darwin",
-        "Australia/Canberra": "Canberra, Melbourne, Sydney, Vladivostok",
-        "Asia/Magadan": "Magadan, Islas SalomÃ³n, Nueva Caledonia",
-        "Pacific/Auckland": "Auckland, Fiji, Kamchatka, Isla Marshall",
-        "Pacific/Tongatapu": "Nuku'alofa",
-        "America/Argentina/Buenos_Aires": "Buenos Aires, Georgetown",
-        "Atlantic/South_Georgia": "Mid-Atlantic",
-        "Atlantic/Cape_Verde": "Cabo Verde",
-        "Asia/Hong_Kong": "Beijing, Chongqing, Hong Kong, Urumqi"
+        "Pacific/Samoa": "(GMT -11:00) Midway Island, Samoa",
+        "US/Hawaii": "(GMT -10:00) Hawaii",
+        "US/Alaska": "(GMT -9:00) Alaska",
+        "Canada/Pacific": "(GMT -8:00) Tiempo Pacífico (EE.UU. y Canadá)",
+        "Canada/Mountain": "(GMT -8:00) Tiempo Montaña (EE.UU. y Canadá)",
+        "Canada/Central": "(GMT -8:00) Tiempo Central (EE.UU. y Canadá)",
+        "Canada/Eastern": "(GMT -8:00) Tiempo del Este(EE.UU. y Canadá)",
+        "Canada/Atlantic": "(GMT -8:00) Tiempo Atlántico(EE.UU. y Canadá)",
+        "Canada/Newfoundland": "(GMT -3:30) Hora de Terranova (Canada)",
+        "Europe/London": "(GMT) Dublín, Edimburgo, Lisboa, Londres",
+        "Europe/Amsterdam": "(GMT +1:00) Amsterdam, Berlín, Berna, Roma, París, Estocolmo, Viena",
+        "Europe/Athens": "(GMT +2:00) Atenas, Bucarest, Estambul, Minsk",
+        "Europe/Moscow": "(GMT +3:00) Moscú, San Petersburgo, Volgogrado",
+        "Asia/Tehran": "(GMT +3:30) Teherán",
+        "Asia/Muscat": "(GMT +4:00) Abu Dhabi, Muscat",
+        "Asia/Kabul": "(GMT +4:30) Kabul",
+        "Asia/Karachi": "(GMT +5:00) Islamabad, Karachi, Tashkent",
+        "Asia/Calcutta": "(GMT +5:30) Kolkata, Chennai, Mumbai, Nueva Delhi",
+        "Asia/Kathmandu": "(GMT +5:45) Katmandú",
+        "Asia/Almaty": "(GMT +6:00) Astana, Almaty, Dhaka, Novosibirsk",
+        "Asia/Rangoon": "(GMT +6:30) Rangún (Yangon, Birmania)",
+        "Asia/Bangkok": "(GMT +7:00) Bangkok, Hanoi, Jakarta",
+        "Asia/Tokyo": "(GMT +9:00) Osaka, Sapporo, Tokyo",
+        "Australia/Adelaide": "(GMT +9:30) Adelaide, Darwin",
+        "Australia/Canberra": "(GMT +10:00) Canberra, Melbourne, Sydney, Vladivostok",
+        "Asia/Magadan": "(GMT +11:00) Magadan, Islas Salomón, Nueva Caledonia",
+        "Pacific/Auckland": "(GMT +12:00) Auckland, Fiji, Kamchatka, Isla Marshall",
+        "Pacific/Tongatapu": "(GMT +13:00) Nuku'alofa",
+        "America/Argentina/Buenos_Aires": "(GMT -3:00) Buenos Aires, Georgetown",
+        "Atlantic/South_Georgia": "(GMT -2:00) Mid-Atlantic",
+        "Atlantic/Cape_Verde": "(GMT -1:00) Cabo Verde",
+        "Asia/Hong_Kong": "(GMT +8:00) Beijing, Chongqing, Hong Kong, Urumqi"
     },
     "show-title": {
-        "label": "Mostrar TÃ­tulo",
+        "label": "Mostrar Título",
         "tooltip": "Poner nombre al reloj"
     },
     "title": {
-        "label": "TÃ­tulo"
+        "label": "Título"
     },
     "placement": {
-        "label": "ColocaciÃ³n",
-        "tooltip": "PosiciÃ³n del tÃ­tulo",
+        "label": "Colocación",
+        "tooltip": "Posición del título",
         "top": "Arriba",
         "bottom": "Abajo",
         "left": "Izquierda",
         "right": "Derecha"
     },
     "padding": {
-        "label": "Espaciamiento (pÃ­xeles)",
-        "tooltip": "La cantidad de espacio entre el tÃ­tulo y el reloj"
+        "label": "Espaciamiento (píxeles)",
+        "tooltip": "La cantidad de espacio entre el título y el reloj"
     },
     "horizontal-align": {
-        "label": "AlineaciÃ³n",
+        "label": "Alineación",
         "left": "Izquierda",
         "center": "Centro",
         "right": "Derecha"
     },
     "vertical-align": {
-        "label": "AlineaciÃ³n",
+        "label": "Alineación",
         "top": "Arriba",
         "middle": "Medio",
         "bottom": "Abajo"
@@ -76,50 +76,50 @@
     "title-font": {
         "font": "Tipo de Letra",
         "font-url": "Tipo de letra URL",
-        "font-size": "Tipo de letra - tamaÃ±o",
+        "font-size": "Tipo de letra - tamaño",
         "modal-title": "Tipo de letras",
         "font-variants": "Variaciones de Tipo de letra",
         "bold": "Negrita",
-        "italic": "ItÃ¡lico",
+        "italic": "Itálico",
         "color": "Color",
-        "text": "Mi TÃ­tulo - Ejemplo de Texto"
+        "text": "Mi Título - Ejemplo de Texto"
     },
     "clock-type": {
         "label": "Tipo de Reloj",
-        "analog": "AnalÃ³gico",
+        "analog": "Analógico",
         "digital": "Digital"
     },
-    "analog-settings": "ConfiguraciÃ³n de Reloj AnalÃ³gico",
+    "analog-settings": "Configuración de Reloj Analógico",
     "frame-color": {
         "color": "Color del Marco"
     },
-    "frame-width": "Anchura del Marco (pÃ­xeles)",
+    "frame-width": "Anchura del Marco (píxeles)",
     "face-color": {
         "color": "Color de la Cara"
     },
     "hand-color": {
         "color": "Manecilla de Hora / Minuto - Color"
     },
-    "hand-width": "Manecilla de Hora / Minuto- Anchura (pÃ­xeles)",
-    "hour-tick-width": "Marcas de hora - Anchura (pÃ­xeles)",
-    "minute-tick-width": "Marcas de Minutos - Anchura (pÃ­xeles)",
-    "show-second-hand": "EnseÃ±ar Manecilla de Minutos",
+    "hand-width": "Manecilla de Hora / Minuto- Anchura (píxeles)",
+    "hour-tick-width": "Marcas de hora - Anchura (píxeles)",
+    "minute-tick-width": "Marcas de Minutos - Anchura (píxeles)",
+    "show-second-hand": "Enseñar Manecilla de Minutos",
     "second-hand-color": {
         "color": "Manecilla de Minutos - Color"
     },
-    "second-hand-width": "Manecilla de Minutos - Anchura (pÃ­xeles)",
+    "second-hand-width": "Manecilla de Minutos - Anchura (píxeles)",
     "numbers-font": {
-        "font": "NÃºmeros - Tipo de Letra",
-        "font-url": "NÃºmeros - Tipo de Letra URL",
-        "font-size": "NÃºmeros - TamaÃ±o de letra",
+        "font": "Números - Tipo de Letra",
+        "font-url": "Números - Tipo de Letra URL",
+        "font-size": "Números - Tamaño de letra",
         "modal-title": "Tipo de letras",
         "font-variants": "Variaciones de Tipo de letra",
         "bold": "Negrita",
-        "italic": "ItÃ¡lico",
-        "color": "NÃºmeros - Color",
-        "text": "NÃºmeros - Ejemplo de Texto"
+        "italic": "Itálico",
+        "color": "Números - Color",
+        "text": "Números - Ejemplo de Texto"
     },
-    "digital-settings": "ConfiguraciÃ³n del Reloj Digital",
+    "digital-settings": "Configuración del Reloj Digital",
     "format": "Formato",
     "digital-font": {
         "font": "Tipo de Letra",
@@ -127,7 +127,7 @@
         "modal-title": "Tipo de letras",
         "font-variants": "Variaciones de Tipo de letra",
         "bold": "Negrita",
-        "italic": "ItÃ¡lico",
+        "italic": "Itálico",
         "color": "Color",
         "text": "Reloj Digital - Ejemplo de Texto"
     },

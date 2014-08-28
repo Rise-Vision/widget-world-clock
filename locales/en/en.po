@@ -7,7 +7,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: AlexK <alex.kolenoff@risedisplay.com>\n"
+"Last-Translator: TomH <thomas.hansen@falconjet.com>\n"
 "Language-Team: \n"
 "Language: en\n"
 "X-Generator: Poedit 1.6.5\n"
@@ -62,6 +62,9 @@ msgstr "Newfoundland Time (Canada)"
 
 msgid "time-zone##Europe/London"
 msgstr "Dublin, Edinburgh, Lisbon, London"
+
+msgid "time-zone##Etc/UTC"
+msgstr "Universal Time Coordinated, Zulu"
 
 msgid "time-zone##Europe/Amsterdam"
 msgstr "Amsterdam, Berlin, Bern, Rome, Paris, Stockholm, Vienna"

@@ -22,6 +22,7 @@
 		"Atlantic/South_Georgia": "Mid-Atlantic",
 		"Atlantic/Cape_Verde": "Cape Verde Is.",
 		"Europe/London": "Dublin, Edinburgh, Lisbon, London",
+		"Etc/UTC": "Universal Time Coordinated, Zulu",
 		"Europe/Amsterdam": "Amsterdam, Berlin, Bern, Rome, Paris, Stockholm, Vienna",
 		"Europe/Athens": "Athens, Bucharest, Istanbul, Minsk",
 		"Europe/Moscow": "Moscow, St. Petersburg, Volgograd",

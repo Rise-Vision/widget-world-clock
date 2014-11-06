@@ -1,12 +1,21 @@
 # World Clock Widget
 
 ## Introduction
+The World Clock Widget displays the local time, or the time in a specific time zone, in either digital or analog format.
 
-The World Clock Widget displays either the local time of the Display or the time in a particular time zone.
+### How It Works
+The analog clock is rendered using the HTML5 `<canvas>` element, while the digital clock is rendered inside of a `<div>` tag. Each clock type redraws itself every second. The font size of the digital clock is not specified in the settings, but rather is automatically scaled so that it grows to be as large as the Placeholder allows.
+
+Time zone conversions are handled using [TimezoneJS](https://github.com/mde/timezone-js), which uses [Olson](http://en.wikipedia.org/wiki/Tz_database) zoneinfo files for its time zone data.
 
 World Clock Widget works in conjunction with [Rise Vision](http://www.risevision.com), the [digital signage management application](http://rva.risevision.com/) that runs on [Google Cloud](https://cloud.google.com).
 
 At this time Chrome is the only browser that this project and Rise Vision supports.
+
+## Development
+
+### Local Development Environment Setup and Installation
+The Widget can be installed by executing the following command: `git clone https://github.com/Rise-Vision/widget-world-clock.git`
 
 ## Submitting Issues
 If you encounter problems or find defects we really want to hear about them. If you could take the time to add them as issues to this Repository it would be most appreciated. When reporting issues please use the following format where applicable:
@@ -29,7 +38,6 @@ What actually happened. (screenshots / video captures always help)
 All contributions are greatly appreciated and welcome! If you would first like to sound out your contribution ideas please post your thoughts to our [community](http://community.risevision.com), otherwise submit a pull request and we will do our best to incorporate it.
 
 ### Languages
-
 If you would like to translate the user interface for this product to another language please complete the following:
 - Download the English translation file from this repository.
 - Download and install POEdit. This is software that you can use to write translations into another language.

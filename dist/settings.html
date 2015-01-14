@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World Clock Widget Settings</title>
+
+  <link rel="stylesheet" href="css/settings.min.css"/>
+
+  <style type="text/css">
+    body, html {
+      background: transparent;
+    }
+
+    label[for="url"] {
+      display: block;
+    }
+  </style>
+</head>
+<body ng-app="risevision.widget.worldClock.settings" ng-controller="settingsController">
+  <div class="widget">
+    <div class="overlay"></div>
+    <div class="settings">
+      <div class="settings-center">
+        <div class="wrapper container modal-content" ng-controller="worldClockSettingsController" ng-cloak>
+          <div class="modal-header">
+            <h2> {{"world-clock.settings" | translate }}
+              <button type="button" class="close" ng-click="closeSettings()">
+                <span>&times;</span>
+                <span class="sr-only">Close</span>
+              </button>
+            </h2>
+            <div class="sticky-wrapper">
+              <widget-button-toolbar
+                save="saveSettings()" cancel="closeSettings()" disable-save="settingsForm.$invalid"
+                help="http://www.risevision.com/help/users/what-are-gadgets/free-gadgets/rise-vision-world-clock/"
+                contribute="https://github.com/Rise-Vision/widget-world-clock"></widget-button-toolbar>
+            </div>
+          </div>
+          <form role="form" name="settingsForm">
+            <div class="section">
+              <h5>{{"world-clock.time.label" | translate}}</h5>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label for="local-time">
+                    <input id="local-time" type="checkbox" ng-model="settings.additionalParams.useLocalTime" />{{ "world-clock.time.local-time" | translate }}
+                  </label>
+                  <span popover="{{'world-clock.time.tooltip' | translate}}" popover-trigger="click" popover-placement="right" rv-tooltip></span>
+                </div>
+              </div>
+              <div class="form-group" ng-show="!useLocalTime">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <label for="time-zone">{{"world-clock.time.time-zone.label" | translate}}</label>
+                    <select id="time-zone" class="form-control" ng-model="settings.additionalParams.timeZone" >
+                      <option value="Pacific/Samoa">{{"world-clock.time.time-zone.Pacific/Samoa" | translate}}</option>
+                      <option value="US/Hawaii">{{"world-clock.time.time-zone.US/Hawaii" | translate}}</option>
+                      <option value="US/Alaska">{{"world-clock.time.time-zone.US/Alaska" | translate}}</option>
+                      <option value="Canada/Pacific">{{"world-clock.time.time-zone.Canada/Pacific" | translate}}</option>
+                      <option value="Canada/Mountain">{{"world-clock.time.time-zone.Canada/Mountain" | translate}}</option>
+                      <option value="Canada/Central">{{"world-clock.time.time-zone.Canada/Central" | translate}}</option>
+                      <option value="Canada/Eastern">{{"world-clock.time.time-zone.Canada/Eastern" | translate}}</option>
+                      <option value="Canada/Atlantic">{{"world-clock.time.time-zone.Canada/Atlantic" | translate}}</option>
+                      <option value="Canada/Newfoundland">{{"world-clock.time.time-zone.Canada/Newfoundland" | translate}}</option>
+                      <option value="America/Argentina/Buenos_Aires">{{"world-clock.time.time-zone.America/Argentina/Buenos_Aires" | translate}}</option>
+                      <option value="Atlantic/South_Georgia">{{"world-clock.time.time-zone.Atlantic/South_Georgia" | translate}}</option>
+                      <option value="Atlantic/Cape_Verde">{{"world-clock.time.time-zone.Atlantic/Cape_Verde" | translate}}</option>
+                      <option value="Europe/London">{{"world-clock.time.time-zone.Europe/London" | translate}}</option>
+                      <option value="Etc/UTC">{{"world-clock.time.time-zone.Etc/UTC" | translate}}</option>
+                      <option value="Europe/Amsterdam">{{"world-clock.time.time-zone.Europe/Amsterdam" | translate}}</option>
+                      <option value="Europe/Athens">{{"world-clock.time.time-zone.Europe/Athens" | translate}}</option>
+                      <option value="Europe/Moscow">{{"world-clock.time.time-zone.Europe/Moscow" | translate}}</option>
+                      <option value="Asia/Tehran">{{"world-clock.time.time-zone.Asia/Tehran" | translate}}</option>
+                      <option value="Asia/Muscat">{{"world-clock.time.time-zone.Asia/Muscat" | translate}}</option>
+                      <option value="Asia/Kabul">{{"world-clock.time.time-zone.Asia/Kabul" | translate}}</option>
+                      <option value="Asia/Karachi">{{"world-clock.time.time-zone.Asia/Karachi" | translate}}</option>
+                      <option value="Asia/Calcutta">{{"world-clock.time.time-zone.Asia/Calcutta" | translate}}</option>
+                      <option value="Asia/Kathmandu">{{"world-clock.time.time-zone.Asia/Kathmandu" | translate}}</option>
+                      <option value="Asia/Almaty">{{"world-clock.time.time-zone.Asia/Almaty" | translate}}</option>
+                      <option value="Asia/Rangoon">{{"world-clock.time.time-zone.Asia/Rangoon" | translate}}</option>
+                      <option value="Asia/Bangkok">{{"world-clock.time.time-zone.Asia/Bangkok" | translate}}</option>
+                      <option value="Asia/Hong_Kong">{{"world-clock.time.time-zone.Asia/Hong_Kong" | translate}}</option>
+                      <option value="Asia/Tokyo">{{"world-clock.time.time-zone.Asia/Tokyo" | translate}}</option>
+                      <option value="Australia/Adelaide">{{"world-clock.time.time-zone.Australia/Adelaide" | translate}}</option>
+                      <option value="Australia/Canberra">{{"world-clock.time.time-zone.Australia/Canberra" | translate}}</option>
+                      <option value="Asia/Magadan">{{"world-clock.time.time-zone.Asia/Magadan" | translate}}</option>
+                      <option value="Pacific/Auckland">{{"world-clock.time.time-zone.Pacific/Auckland" | translate}}</option>
+                      <option value="Pacific/Tongatapu">{{"world-clock.time.time-zone.Pacific/Tongatapu" | translate}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <h5>{{"world-clock.title.label" | translate}}</h5>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label for="show-title">
+                    <input id="show-title" type="checkbox" ng-model="settings.additionalParams.showTitle" />{{ "world-clock.title.show" | translate }}
+                  </label>
+                  <span popover="{{'world-clock.title.tooltip' | translate}}" popover-trigger="click" popover-placement="right" rv-tooltip></span>
+                </div>
+              </div>
+              <div class="form-group" ng-show="showTitle">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <label for="title">{{"world-clock.title.label" | translate}}</label>
+                    <input id="title" name="title" class="text-field form-control" type="text" ng-model="settings.additionalParams.title" ng-required="showTitle" />
+                    <p class="text-danger" ng-show="settingsForm.title.$error.required">
+                      {{"widgets.errors.required" | translate}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="showTitle">
+                <label for="placement">{{"world-clock.title.placement.label" | translate}}</label>
+                <span popover="{{'world-clock.title.placement.tooltip' | translate}}" popover-trigger="click" popover-placement="right" rv-tooltip></span>
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <select id="placement" class="form-control" ng-model="settings.additionalParams.placement" >
+                      <option value="top">{{"world-clock.title.placement.top" | translate}}</option>
+                      <option value="bottom">{{"world-clock.title.placement.bottom" | translate}}</option>
+                      <option value="left">{{"world-clock.title.placement.left" | translate}}</option>
+                      <option value="right">{{"world-clock.title.placement.right" | translate}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="showTitle">
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <label for="padding">{{"world-clock.title.padding.label" | translate}}</label>
+                    <span popover="{{'world-clock.title.padding.tooltip' | translate}}" popover-trigger="click" popover-placement="right" rv-tooltip></span>
+                    <input id="padding" name="padding" class="text-field form-control" type="number" ng-model="settings.additionalParams.padding" />
+                    <p class="text-danger" ng-show="settingsForm.padding.$error.number">
+                      {{"widgets.errors.numeric" | translate}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="showTitle && !showVerticalAlign">
+                <label for="horizontal-align">{{"world-clock.title.horizontal-align.label" | translate}}</label>
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <select id="horizontal-align" class="form-control" ng-model="settings.additionalParams.horizontalAlign">
+                      <option value="left">{{"world-clock.title.horizontal-align.left" | translate}}</option>
+                      <option value="center">{{"world-clock.title.horizontal-align.center" | translate}}</option>
+                      <option value="right">{{"world-clock.title.horizontal-align.right" | translate}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="showTitle && showVerticalAlign">
+                <label for="vertical-align">{{"world-clock.title.vertical-align.label" | translate}}</label>
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <select id="vertical-align" class="form-control" ng-model="settings.additionalParams.verticalAlign" >
+                      <option value="top">{{"world-clock.title.vertical-align.top" | translate}}</option>
+                      <option value="middle">{{"world-clock.title.vertical-align.middle" | translate}}</option>
+                      <option value="bottom">{{"world-clock.title.vertical-align.bottom" | translate}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="showTitle">
+                <label>{{"widgets.font" | translate}}</label>
+                <font-setting id="title-font" hide-alignment="true" font-data="settings.additionalParams.titleFont" preview-text="{{'world-clock.title.font.text' | translate}}">
+                </font-setting>
+              </div>
+            </div>
+            <div class="section">
+              <h5>{{"world-clock.clock-type.label" | translate}}</h5>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" value="analog" ng-model="settings.additionalParams.clockType">
+                    {{"world-clock.clock-type.analog.label" | translate}}
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" value="digital" ng-model="settings.additionalParams.clockType">
+                    {{"world-clock.clock-type.digital.label" | translate}}
+                  </label>
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <label for="frame-color">{{"world-clock.clock-type.analog.frame-color" | translate}}</label><br />
+                <div>
+                  <input color-picker id="frame-color" color="settings.additionalParams.frameColor" type="background" />
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <label for="frame-width">{{"world-clock.clock-type.analog.frame-width" | translate}}</label>
+                    <input id="frame-width" name="frameWidth" class="text-field form-control" type="number" ng-model="settings.additionalParams.frameWidth" />
+                    <p class="text-danger" ng-show="settingsForm.frameWidth.$error.number">
+                      {{"widgets.errors.numeric" | translate}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <div>
+                  <label for="face-color">{{"world-clock.clock-type.analog.face-color" | translate}}</label><br />
+                  <input color-picker id="face-color" color="settings.additionalParams.faceColor" type="background" />
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <label for="hand-color">{{"world-clock.clock-type.analog.hand-color" | translate}}</label><br />
+                <input color-picker id="hand-color" color="settings.additionalParams.handColor" type="background" />
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <label for="hand-width">{{"world-clock.clock-type.analog.hand-width" | translate}}</label>
+                    <input id="hand-width" name="handWidth" class="text-field form-control" type="number" ng-model="settings.additionalParams.handWidth" />
+                    <p class="text-danger" ng-show="settingsForm.handWidth.$error.number">
+                      {{"widgets.errors.numeric" | translate}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <label for="hour-tick-width">{{"world-clock.clock-type.analog.hour-tick-width" | translate}}</label>
+                    <input id="hour-tick-width" name="hourTickWidth" class="text-field form-control" type="number" ng-model="settings.additionalParams.hourTickWidth" />
+                    <p class="text-danger" ng-show="settingsForm.hourTickWidth.$error.number">
+                      {{"widgets.errors.numeric" | translate}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <label for="minute-tick-width">{{"world-clock.clock-type.analog.minute-tick-width" | translate}}</label>
+                    <input id="minute-tick-width" name="minuteTickWidth" class="text-field form-control" type="number" ng-model="settings.additionalParams.minuteTickWidth" />
+                    <p class="text-danger" ng-show="settingsForm.minuteTickWidth.$error.number">
+                      {{"widgets.errors.numeric" | translate}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <div class="checkbox">
+                  <label for="show-second-hand">
+                    <input id="show-second-hand" type="checkbox" ng-model="settings.additionalParams.showSecondHand" />{{ "world-clock.clock-type.analog.show-second-hand" | translate }}
+                  </label>
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital && showSecondHand">
+                <label for="second-hand-color">{{"world-clock.clock-type.analog.second-hand-color" | translate}}</label><br />
+                <input color-picker id="second-hand-color" color="settings.additionalParams.secondHandColor" type="background" />
+              </div>
+              <div class="form-group" ng-show="!showDigital && showSecondHand">
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <label for="second-hand-width">{{"world-clock.clock-type.analog.second-hand-width" | translate}}</label>
+                    <input id="second-hand-width" name="secondHandWidth" class="text-field form-control" type="number" ng-model="settings.additionalParams.secondHandWidth" />
+                    <p class="text-danger" ng-show="settingsForm.secondHandWidth.$error.number">
+                      {{"widgets.errors.numeric" | translate}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="!showDigital">
+                <label>{{"widgets.font" | translate}}</label>
+                <font-setting id="analog-font" hide-alignment="true" font-data="settings.additionalParams.analogFont" preview-text="{{'world-clock.clock-type.analog.font.text' | translate}}">
+                </font-setting>
+              </div>
+              <div class="form-group" ng-show="showDigital">
+                <label for="format">{{"world-clock.clock-type.digital.format" | translate}}</label>
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <select id="format" class="form-control" ng-model="settings.additionalParams.format">
+                      <option value="standard-seconds">{{currentDate | date: "h:mm:ss a"}}</option>
+                      <option value="standard">{{currentDate | date: "h:mm a"}}</option>
+                      <option value="military-seconds">{{currentDate | date: "H:mm:ss"}}</option>
+                      <option value="military">{{currentDate | date: "H:mm"}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" ng-show="showDigital">
+                <label>{{"widgets.font" | translate}}</label>
+                <font-setting id="digital-font" hide-alignment="true" font-data="settings.additionalParams.digitalFont" preview-text="{{'world-clock.clock-type.digital.font.text' | translate}}">
+                </font-setting>
+              </div>
+            </div>
+            <background-setting id="background" background="settings.additionalParams.background"></background-setting>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <script src="js/settings.min.js"></script>
+
+  <!-- build:e2egadgets -->
+  <script src="//rvashow2.appspot.com/gadgets/gadgets.min.js"></script>
+  
+
+  <script src="//s3.amazonaws.com/rise-common/scripts/i18next/i18next.min.js"></script>
+</body>
+</html>

@@ -1,6 +1,10 @@
 var system = require("system");
 var e2ePort = system.env.E2E_PORT || 8099;
 
+casper.on("remote.message", function(message) {
+  this.echo(message);
+});
+
 casper.test.begin("World Clock Widget - e2e Testing", function (test) {
   casper.start("http://localhost:"+e2ePort+"/src/widget-e2e.html",
     function () {
@@ -62,6 +66,7 @@ casper.test.begin("World Clock Widget - e2e Testing", function (test) {
       }, "Time has correct font-family");
 
       test.assertEval(function () {
+        // 61px on CCI but 62px locally. Use 61px.
         return document.defaultView.getComputedStyle(document.querySelector("#digital"), null).getPropertyValue("font-size") === "61px";
       }, "Time has correct font-size");
 

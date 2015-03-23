@@ -26,20 +26,19 @@
   ],
   "devDependencies": {
     "angular-mocks": "1.2.18",
-    "q": "1.0.1",
-    "sinon": "~1.10.2"
+    "q": "1.0.1"
   },
   "dependencies": {
     "angular": "1.2.18",
     "angular-route": "1.2.18",
     "moment": "~2.8.3",
     "timezone-js": "~0.4.13",
-    "widget-settings-ui-components": "https://github.com/Rise-Vision/widget-settings-ui-components.git",
-    "widget-settings-ui-core": "https://github.com/Rise-Vision/widget-settings-ui-core.git"
+    "widget-settings-ui-components": "https://github.com/Rise-Vision/widget-settings-ui-components.git#0.1.0",
+    "widget-settings-ui-core": "https://github.com/Rise-Vision/widget-settings-ui-core.git#0.1.8"
   },
   "resolutions": {
-    "angular-translate": "~2.4.2",
-    "angular-translate-loader-static-files": "~2.4.2",
+    "angular-translate": "~2.5.2",
+    "angular-translate-loader-static-files": "~2.5.2",
     "jquery": "1.11.0"
   }
 }
